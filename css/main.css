@@ -1,0 +1,163 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header and Footer */
+#header, #footer {
+    width: 100%;
+}
+
+/* Main content area */
+#main-home {
+    max-width: 1200px;
+    margin: 100px auto 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+
+#main-home h1 {
+    font-size: 2.5em;
+    margin-bottom: -5px;
+    color: #333;
+}
+#main-home p {
+    margin-bottom: 20px;
+}
+
+
+/* Slider Images style*/
+#slider {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    height: 400px; 
+}
+
+/* Individual Slides */
+#slider .slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    transition: opacity 0.8s ease;
+}
+
+#slider .slide.active {
+    opacity: 1;
+    z-index: 1;
+}
+
+#slider .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center; /* Ensure image is centered */
+}
+
+/* Adjustments for Larger Screens */
+@media (min-width: 768px) {
+    #slider {
+        height: 600px; 
+    }
+}
+
+
+/* About Me section */
+#about-me {
+    margin: 20px 0;
+}
+
+/* Courses section */
+#courses {
+    margin: 20px 0;
+    text-align: left;
+}
+
+#courses h2 {
+    margin-bottom: 10px;
+}
+
+.course {
+    margin-bottom: 20px;
+}
+
+.course h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.course img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Adjustments for Larger Screens */
+@media (min-width: 768px) {
+    .course img {
+        width: 70%; 
+        margin: 0 auto; 
+    }
+}
+
+/* Calendar section */
+#calendar {
+    margin: 20px 0;
+}
+
+#calendar h2 {
+    margin-bottom: 10px;
+}
+
+/* Testimonials section */
+#testimonials {
+    margin: 20px 0;
+    text-align: left;
+}
+
+#testimonials h2 {
+    margin-bottom: 10px;
+}
+
+.testimonial {
+    margin-bottom: 15px;
+}
+
+.testimonial p {
+    font-style: italic;
+}
+
+.testimonial span {
+    display: block;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #main-home {
+        padding: 10px;
+        margin-top: 80px;
+    }
+    
+    #main-home h1 {
+        font-size: 2em;
+    }
+
+    #slider {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    #main-home h1 {
+        font-size: 1.5em;
+    }
+}

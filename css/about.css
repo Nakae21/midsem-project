@@ -1,0 +1,138 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#main-about {
+    max-width: 1200px;
+    margin: 100px auto 20px;
+    padding: 20px;
+    text-align: left;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Section styles */
+#main-about section {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+}
+
+#main-about h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+    border-bottom: 2px solid #007BFF;
+    padding-bottom: 10px;
+}
+
+#main-about ul {
+    list-style-type: none;
+    padding: 0;
+    flex: 1;
+}
+
+#main-about li {
+    margin-bottom: 20px;
+}
+
+#main-about h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+#main-about p {
+    margin: 5px 0;
+    color: #666;
+}
+
+/* Education type text color */
+#main-about .education-type {
+    color: #007BFF;
+}
+
+#main-about .work-experience-type {
+    color: #28A745;
+}
+
+#main-about .seminar-type {
+    color: #DC3545;
+}
+
+#main-about .leadership-type {
+    color: #FFC107;
+}
+
+#main-about .community-service-type {
+    color: #17A2B8;
+}
+
+#main-about .hobby-type {
+    color: #6C757D;
+}
+
+/* Image styles */
+.section-image {
+    max-width: 150px;
+    margin-right: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: max-width 0.3s ease;
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+    .section-image {
+        max-width: 200px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .section-image {
+        max-width: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+    #main-about {
+        padding: 10px;
+    }
+    
+    #main-about h2 {
+        font-size: 1.75em;
+    }
+    
+    #main-about h3 {
+        font-size: 1.25em;
+    }
+
+    section {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .section-image {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    #main-about h2 {
+        font-size: 1.5em;
+    }
+    
+    #main-about h3 {
+        font-size: 1em;
+    }
+}
